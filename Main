@@ -1,0 +1,348 @@
+local ScreenGui = Instance.new("ScreenGui")
+local MainUI = Instance.new("Frame")
+local SilentAim = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Speed = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local SidePannel = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TopUI = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local Version = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local BelowCredits = Instance.new("TextLabel")
+local CreditsTitle = Instance.new("TextLabel")
+local Aimware = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local AnimationCombos = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainUI.Name = "MainUI"
+MainUI.Parent = ScreenGui
+MainUI.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+MainUI.BorderColor3 = Color3.fromRGB(31, 31, 31)
+MainUI.Position = UDim2.new(0.309727609, 0, 0.263803691, 0)
+MainUI.Size = UDim2.new(0, 488, 0, 385)
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = MainUI
+SilentAim.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+SilentAim.BorderColor3 = Color3.fromRGB(35, 35, 35)
+SilentAim.Position = UDim2.new(0.0491803214, 0, 0.0987012982, 0)
+SilentAim.Size = UDim2.new(0, 159, 0, 50)
+SilentAim.Font = Enum.Font.Cartoon
+SilentAim.Text = "Silent Aim"
+SilentAim.TextColor3 = Color3.fromRGB(189, 189, 189)
+SilentAim.TextSize = 25.000
+
+UICorner.Parent = SilentAim
+
+UICorner_2.Parent = MainUI
+
+Speed.Name = "Speed"
+Speed.Parent = MainUI
+Speed.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Speed.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Speed.Position = UDim2.new(0.397540957, 0, 0.0987012982, 0)
+Speed.Size = UDim2.new(0, 159, 0, 50)
+Speed.Font = Enum.Font.Cartoon
+Speed.Text = "Speed (C)"
+Speed.TextColor3 = Color3.fromRGB(189, 189, 189)
+Speed.TextSize = 25.000
+
+UICorner_3.Parent = Speed
+
+SidePannel.Name = "SidePannel"
+SidePannel.Parent = MainUI
+SidePannel.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+SidePannel.BorderColor3 = Color3.fromRGB(22, 22, 22)
+SidePannel.Position = UDim2.new(0.753895819, 0, 0.0633096993, 0)
+SidePannel.Size = UDim2.new(0, 120, 0, 360)
+
+UICorner_4.Parent = SidePannel
+
+TopUI.Name = "TopUI"
+TopUI.Parent = MainUI
+TopUI.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+TopUI.BorderColor3 = Color3.fromRGB(22, 22, 22)
+TopUI.Position = UDim2.new(0, 0, -0.00113136985, 0)
+TopUI.Size = UDim2.new(0, 487, 0, 25)
+
+Title.Name = "Title"
+Title.Parent = TopUI
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 488, 0, 25)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "Internal Ware"
+Title.TextColor3 = Color3.fromRGB(193, 193, 193)
+Title.TextSize = 25.000
+
+UICorner_5.Parent = TopUI
+
+Version.Name = "Version"
+Version.Parent = TopUI
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0.51844269, 0, 2.98023224e-08, 0)
+Version.Size = UDim2.new(0, 200, 0, 32)
+Version.Font = Enum.Font.Gotham
+Version.Text = "Version 1.0"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 10.000
+Version.TextStrokeTransparency = 0.500
+Version.TextTransparency = 0.600
+
+Close.Name = "Close"
+Close.Parent = MainUI
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.928246856, 0, 0.00146603584, 0)
+Close.Size = UDim2.new(0, 34, 0, 31)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(108, 108, 108)
+Close.TextSize = 25.000
+Close.TextWrapped = true
+
+BelowCredits.Name = "BelowCredits"
+BelowCredits.Parent = MainUI
+BelowCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BelowCredits.BackgroundTransparency = 1.000
+BelowCredits.Position = UDim2.new(0.75389576, 0, 0.732467532, 0)
+BelowCredits.Size = UDim2.new(0, 120, 0, 102)
+BelowCredits.Font = Enum.Font.SourceSans
+BelowCredits.Text = "Internal Ware Is Fully Made by Internal#0904"
+BelowCredits.TextColor3 = Color3.fromRGB(170, 170, 170)
+BelowCredits.TextSize = 25.000
+BelowCredits.TextWrapped = true
+
+CreditsTitle.Name = "CreditsTitle"
+CreditsTitle.Parent = MainUI
+CreditsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsTitle.BackgroundTransparency = 1.000
+CreditsTitle.Position = UDim2.new(0.75389576, 0, 0.67792207, 0)
+CreditsTitle.Size = UDim2.new(0, 120, 0, 21)
+CreditsTitle.Font = Enum.Font.GothamBold
+CreditsTitle.Text = "Credits:"
+CreditsTitle.TextColor3 = Color3.fromRGB(170, 170, 170)
+CreditsTitle.TextSize = 30.000
+CreditsTitle.TextWrapped = true
+
+Aimware.Name = "Aimware"
+Aimware.Parent = MainUI
+Aimware.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Aimware.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Aimware.Position = UDim2.new(0.0491803288, 0, 0.264935076, 0)
+Aimware.Size = UDim2.new(0, 159, 0, 50)
+Aimware.Font = Enum.Font.Cartoon
+Aimware.Text = "Aimware"
+Aimware.TextColor3 = Color3.fromRGB(189, 189, 189)
+Aimware.TextSize = 25.000
+
+UICorner_6.Parent = Aimware
+
+AnimationCombos.Name = "AnimationCombos"
+AnimationCombos.Parent = MainUI
+AnimationCombos.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+AnimationCombos.BorderColor3 = Color3.fromRGB(35, 35, 35)
+AnimationCombos.Position = UDim2.new(0.397540987, 0, 0.264935076, 0)
+AnimationCombos.Size = UDim2.new(0, 159, 0, 50)
+AnimationCombos.Font = Enum.Font.Cartoon
+AnimationCombos.Text = "Animation Combos"
+AnimationCombos.TextColor3 = Color3.fromRGB(189, 189, 189)
+AnimationCombos.TextSize = 20.000
+
+UICorner_7.Parent = AnimationCombos
+
+local function NLFSHPN_fake_script() -- SilentAim.LocalScript 
+	local script = Instance.new('LocalScript', SilentAim)
+
+	function OnClicked() 
+		_G.Prediction =  (  .18  )
+	
+		_G.FOV =  (  80  )
+	
+		_G.AimKey =  (  "9"  )
+	
+		local SilentAim = true
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+		local Players = game:GetService("Players")
+		local Mouse = LocalPlayer:GetMouse()
+		local Camera = game:GetService("Workspace").CurrentCamera
+		hookmetamethod = hookmetamethod
+		Drawing = Drawing
+	
+		local FOV_CIRCLE = Drawing.new("Circle")
+		FOV_CIRCLE.Visible = false
+		FOV_CIRCLE.Filled = false
+		FOV_CIRCLE.Thickness = 2.2
+		FOV_CIRCLE.Transparency = 1
+		FOV_CIRCLE.Color = Color3.new(0.756863, 0, 0)
+		FOV_CIRCLE.Radius = _G.FOV
+		FOV_CIRCLE.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+	
+		Options = {
+			Torso = "HumanoidRootPart";
+			Head = "Head";
+		}
+	
+		local function MoveFovCircle()
+			pcall(function()
+				local DoIt = true
+				spawn(function()
+					while DoIt do task.wait()
+						FOV_CIRCLE.Position = Vector2.new(Mouse.X, (Mouse.Y + 36))
+					end
+				end)
+			end)
+		end coroutine.wrap(MoveFovCircle)()
+	
+		Mouse.KeyDown:Connect(function(KeyPressed)
+			if KeyPressed == (_G.AimKey:lower()) then
+				if SilentAim == false then
+					FOV_CIRCLE.Color = Color3.new(0, 1, 0)
+					SilentAim = true
+				elseif SilentAim == true then
+					FOV_CIRCLE.Color = Color3.new(1, 0, 0)
+					SilentAim = false
+				end
+			end
+		end)
+	
+		local oldIndex = nil 
+		oldIndex = hookmetamethod(game, "__index", function(self, Index)
+			if self == Mouse and (Index == "Hit") then 
+				local Distance = 9e9
+				local Targete = nil
+				if SilentAim then
+	
+					for _, v in pairs(Players:GetPlayers()) do 
+						if v ~= LocalPlayer and v.Character and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("Humanoid").Health > 0 then
+							local Enemy = v.Character	
+							local CastingFrom = CFrame.new(Camera.CFrame.Position, Enemy[Options.Torso].CFrame.Position) * CFrame.new(0, 0, -4)
+							local RayCast = Ray.new(CastingFrom.Position, CastingFrom.LookVector * 9000)
+							local World, ToSpace = workspace:FindPartOnRayWithIgnoreList(RayCast, {LocalPlayer.Character:FindFirstChild("Head")})
+							local RootWorld = (Enemy[Options.Torso].CFrame.Position - ToSpace).magnitude
+							if RootWorld < 4 then
+								local RootPartPosition, Visible = Camera:WorldToScreenPoint(Enemy[Options.Torso].Position)
+								if Visible then
+									local Real_Magnitude = (Vector2.new(Mouse.X, Mouse.Y) - Vector2.new(RootPartPosition.X, RootPartPosition.Y)).Magnitude
+									if Real_Magnitude < Distance and Real_Magnitude < FOV_CIRCLE.Radius then
+										Distance = Real_Magnitude
+										Targete = Enemy
+									end
+								end
+							end
+						end
+					end
+				end
+	
+				if Targete ~= nil and Targete[Options.Torso] and Targete:FindFirstChild("Humanoid").Health > 0 then
+					if SilentAim then
+						local ShootThis = Targete[Options.Torso] -- or Options.Head
+						local Predicted_Position = ShootThis.CFrame + (ShootThis.Velocity * _G.Prediction + Vector3.new(0,-1,0))
+						return ((Index == "Hit" and Predicted_Position))
+					end
+				end
+	
+			end
+			return oldIndex(self, Index)
+		end)
+	end
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(NLFSHPN_fake_script)()
+local function ILZHX_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	function OnClicked() 
+		plr = game:GetService('Players').LocalPlayer
+	
+		down = true
+	
+		function onButton1Down(mouse)
+	
+			down = true
+	
+			while down do
+	
+				if not down then break end
+	
+				local char = plr.Character
+	
+				char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 190
+	
+				wait()
+	
+			end
+	
+		end
+	
+		function onButton1Up(mouse)
+	
+			down = false
+	
+		end
+	
+		function onSelected(mouse)
+	
+			mouse.KeyDown:connect(function(c) if c:lower()=="c"then onButton1Down(mouse)end end)
+	
+			mouse.KeyUp:connect(function(c) if c:lower()=="c"then onButton1Up(mouse)end end)
+	
+		end
+	
+		onSelected(game.Players.LocalPlayer:GetMouse())
+	end
+	script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(ILZHX_fake_script)()
+local function EATL_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local function OnClicked()
+		script.Parent.Parent:Remove()
+	end
+	
+	script.Parent.MouseButton1Click:connect(OnClicked)
+end
+coroutine.wrap(EATL_fake_script)()
+local function DKZPYLN_fake_script() -- Aimware.LocalScript 
+	local script = Instance.new('LocalScript', Aimware)
+
+	function OnClicked() 
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Hyotinhofofinho/s1mple/main/LIXO"))()
+		end
+		script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(DKZPYLN_fake_script)()
+local function BGXHFPT_fake_script() -- AnimationCombos.LocalScript 
+	local script = Instance.new('LocalScript', AnimationCombos)
+
+	function OnClicked() 
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/carlcoded/scripp/main/animationcombos'))()
+		end
+		script.Parent.MouseButton1Down:connect(OnClicked)
+end
+coroutine.wrap(BGXHFPT_fake_script)()
+local function TFSL_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	game:GetService("StarterGui"):SetCore("SendNotification",{     
+	
+		Title = "Information",     
+	
+		Text = "Internal Ware | Premium++",
+	
+	
+		Duration = 15
+	
+	})
+end
+coroutine.wrap(TFSL_fake_script)()
